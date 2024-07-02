@@ -1,8 +1,9 @@
-#import <Foundation/Foundation.h>
-#import <WidgetKit/WidgetKit.h>
+#ifdef __cplusplus
+extern "C" {
+    #endif
 
-@interface NativeBridge : NSObject
+    void updateWidget(int level);
 
-+ (void)updateWidgetWithLevel:(int)level;
-
-@end
+    #ifdef __cplusplus
+}
+#endif
